@@ -11,9 +11,9 @@ import React, { Component } from "react"
 8- It's not recommended to use this.setState in a componentWillUnmount method.
 9- It's not recommended to use this.setState in a componentWillReceiveProps method.
 -----------------------------------------------------------------------------------
-NOTE: The key difference between this.setState in class component and setState method
-in functional component is that this.setState will automatically merge and update the state,
-whereas, setState method in functional component will not, and you have to do it manually.
+NOTE: The key difference between (this.setState) in class component and (useState) method
+in functional component is that (this.setState) will automatically merge and update the state,
+whereas, (useState) method in functional component will not, and you have to do it manually.
 ===============================================================================*/
 
 class ClassCounterThree extends Component {
