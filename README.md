@@ -46,10 +46,16 @@ $ git clone https://github.com/ZikaZaki/react-hooks.git
 
 ### Install Dependencies
 
-To check for linters, use the files provided by [Microverse](https://github.com/microverseinc/linters-config/tree/master/react-redux). A GitHub action is also set to run during pull request. Run the following command to install dependencies:
+Using **npm** package manager:
 
 ```bash
 $ npm install
+```
+
+Using **yarn** package manager:
+
+```bash
+$ yarn add
 ```
 
 ### Run tests
