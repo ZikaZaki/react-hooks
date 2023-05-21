@@ -23,7 +23,7 @@ To get a local copy up and running follow these simple example steps.
 
 - [x] Basic Knowledge of **HTML**, **CSS**, & **JavaScript**.
 - [x] Basic knowledge of **React** fundamentals.
-- [x] Basic knowledge of **Redux** fundamentals.
+- [x] Basic knowledge of **React-Hooks** fundamentals.
 - [x] Basic knowledge of **ES6** syntax.
 - [x] Basic knowledge of **Git** & **GitHub**.
 - [x] Basic knowledge of **Linters**.
@@ -33,17 +33,16 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- Create a new **Microverse** folder and move into it.
-- Open the **Command Prompt (CMD)** in the current directory (Microverse Folder).
+- Create a new **projects** directory and move into it.
+- Open the **Command Prompt (CMD)** in the current directory (projects directory).
 - Run the following command:
 
 ```
-$ git clone https://github.com/ZikaZaki/countries-info.git
+$ git clone https://github.com/ZikaZaki/react-hooks.git
 ```
 
-- Once finished you should see a new folder called **countries-info** folder in your current directory.
+- Once finished you should see a new folder called **react-hooks** in your current (projects) directory.
 - Start customizing the project so it fits your personal preferences and needs.
-- Enjoy your new professional **Countries-Info** application!
 
 ### Install Dependencies
 
