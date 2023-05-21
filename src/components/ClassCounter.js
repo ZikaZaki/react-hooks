@@ -16,9 +16,11 @@ class ClassCounter extends Component {
   }
 
   render() {
+    const { count } = this.state
+
     return (
       <div>
-        <button onClick={this.incrementCount}>Count: {this.state.count}</button>
+        <button onClick={this.incrementCount}>Count: {count}</button>
       </div>
     )
   }
