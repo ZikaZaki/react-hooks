@@ -18,6 +18,7 @@ function HookCounterThree() {
             />
             <h2>Your first name is: {name.firstName}</h2>
             <h2>Your last name is: {name.lastName}</h2>
+            <h2>{JSON.stringify(name)}</h2>
         </form>
     </div>
   )
