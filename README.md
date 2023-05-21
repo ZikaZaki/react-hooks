@@ -1,28 +1,19 @@
-## React-Hooks
-> React Hooks 学习笔记
->
-
-# Countries-Info
-
-> This web application is built upon real live data from the **REST Countries API**. The main purpose is to build a web application  that provides all sorts of useful information about every country. It includes data from ISO 3166 (countries and states/subdivisions ), ISO 4217 (currency), and E.164 (phone numbers). The application will allow users to get information about any country they're willing to visit.
+## React-Hooks 学习笔记
+> This React-Hooks 学习笔记 web application is part of a **React Advanced Tutorial**. The main purpose of this tutorial is to discuss **React Hooks** in details and give students a comprehensive and practical on how to leverage them while building web application with **React** library. 
 
 ## Built With ⚙️
 
 - **Major languages**: HTML, CSS, & JavaScript.
-- **Frameworks**: React & Redux.
+- **Frameworks**: React & React-Hooks.
 - **Linters**: Lighthouse, Webhint, Stylelint & ESLint.
-- **Technologies used**: NPM, Webpack, & Jest Library.
-- **Tools**: Git, Gitflow, GitHub, Netlify, VS Code, & Chrome Browser.
+- **Technologies used**: Yarn, Webpack, & Jest Library.
+- **Tools**: Git, Gitflow, GitHub, VS Code, & Chrome Browser.
 
 ## Live Demo (Deployed On Netlify) 🚀
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/68ea255b-ae38-4005-968b-6fbd0a8d676b/deploy-status)](https://635471502ef0e179bf2f6409--boisterous-dango-e226ad.netlify.app/)
+[![Netlify Status](https://api.netlify.com/)](https://api.netlify.com/)
 
-[Live Demo Link](https://635471502ef0e179bf2f6409--boisterous-dango-e226ad.netlify.app/)
-
-## Video Link (Recorded by Loom) 📹
-
-[Video Link](https://loom.com/share/86664c4cbbea4828a9eb5ca11f5eccc0)
+[Live Demo Link](https://api.netlify.com/)
 
 ## Getting Started
 
