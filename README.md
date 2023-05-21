@@ -71,8 +71,8 @@ $ npm run test
 👤 **Zakariya Al-Khamisi ([ZikaZaki](https://github.com/ZikaZaki))**
 
 - GitHub: [ZikaZaki](https://github.com/ZikaZaki)
+- LinkedIn: [ZikaZaki](https://www.linkedin.com/in/zikazaki/)
 - Twitter: [Zakariya Al-Khamisi](https://twitter.com/ZakariyaKhamisi)
-- LinkedIn: [Zakariya Al-Khamisi](https://www.linkedin.com/in/zakariyaalkhamisisap/)
 
 ## Show your support
 
