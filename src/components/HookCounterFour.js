@@ -1,22 +1,26 @@
 import React, { useState } from "react"
 
 function HookCounterFour() {
-  const [items, setItems] = useState([])
+  const [items, setItems] = useState([]);
 
   const addItem = () => {
-    setItems(...items, {
-        id: items.length + 1,
-        value: Math.floor(Math.random() * 10) + 1
-    })
+    setItems([
+        ...items,
+        {
+            id: items.length + 1,
+            value: Math.floor(Math.random() * 10 + 1)
+        }
+    ])
   }
 
+  console.log("Type of items ", Array.isArray(items))
   return (
     <div>
         <button onClick={addItem}>Add a number</button>
         <ul>
-            {
-                items.map(item => <li key={item.id}>{item.value}</li>)
-            }
+            {items.map(item => (
+                <li key={item.id}>{item.value}</li>
+            ))}
         </ul>
     </div>
   )
