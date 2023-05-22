@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 /*
 =============================Rules of Hooks=============================
 1- Only call Hooks at the Top Level.
@@ -10,6 +10,10 @@ regular JavaScript function.
 */
 function HookCounter() {
   const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    document.title = `You clicked ${count} times`
+  })
 
   return (
     <div>
