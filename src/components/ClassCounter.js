@@ -9,6 +9,14 @@ class ClassCounter extends Component {
     }
   }
 
+  componentDidMount() {
+    document.title = `Clicked ${this.state.count} times`
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    document.title = `Clicked ${this.state.count} times`
+  }
+
   incrementCount = () => {
     this.setState({
         count: this.state.count + 1
