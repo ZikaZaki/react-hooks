@@ -10,10 +10,10 @@ import HookCounterTwo from "./components/HookCounterTwo";
 function App() {
   return (
     <div className="App">
-      <ClassCounter />
+      {/* <ClassCounter /> */}
       {/* <ClassCounterTwo /> */}
       {/* <ClassCounterThree /> */}
-      {/* <HookCounter /> */}
+      <HookCounter />
       {/* <HookCounterTwo /> */}
       {/* <HookCounterThree /> */}
       {/* <HookCounterFour /> */}
