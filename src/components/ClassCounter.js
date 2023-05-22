@@ -5,7 +5,8 @@ class ClassCounter extends Component {
     super(props)
   
     this.state = {
-       count: 0
+       count: 0,
+       name: ''
     }
   }
 
@@ -23,11 +24,18 @@ class ClassCounter extends Component {
     })
   }
 
+  handleNameChange = (e) => {
+    this.setState({
+      name: e.target.value
+    })
+  }
+
   render() {
-    const { count } = this.state
+    const { count, name } = this.state
 
     return (
       <div>
+        <input type="text" value={name} onChange={e => this.handleNameChange(e)} />
         <button onClick={this.incrementCount}>Count: {count}</button>
       </div>
     )
