@@ -1,4 +1,23 @@
 import React, { Component } from "react"
+/* ====================================Lifecycle Methods====================================
+ * componentDidMount(): Called when the component is mounted. It's called only once.
+ * componentDidUpdate(): Called when the component is updated. It's called after every render.
+ * componentWillUnmount(): Called just before the component is unmounted and destroyed.
+ * shouldComponentUpdate(): Called before the component is updated. It's called before render.
+ * ------------------------------------------------------------------------------------------
+ * Best Practices of using Lifecycle Methods:
+ * 1- It's not recommended to use this.setState in a constructor.
+ * 2- It's not recommended to use this.setState in a render method.
+ * 3- It's not recommended to use this.setState in a componentWillMount method.
+ * 4- It's not recommended to use this.setState in a componentDidMount method.
+ * 5- It's not recommended to use this.setState in a componentWillUpdate method.
+ * 6- It's not recommended to use this.setState in a shouldComponentUpdate method.
+ * 7- It's not recommended to use this.setState in a componentDidUpdate method.
+ * 8- It's not recommended to use this.setState in a componentWillUnmount method.
+ * 9- It's not recommended to use this.setState in a componentWillReceiveProps method.
+ * ------------------------------------------------------------------------------------------
+ * ==========================================================================================
+ */
 
 class ClassCounter extends Component {
   constructor(props) {
