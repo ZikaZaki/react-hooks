@@ -1,15 +1,15 @@
 import React, { Component } from "react"
-/*=================================this.setState=================================
-# Rules of using this.setState:
-1- It's not recommended to use this.setState in a constructor.
-2- It's not recommended to use this.setState in a render method.
-3- It's not recommended to use this.setState in a componentWillMount method.
-4- It's not recommended to use this.setState in a componentDidMount method.
-5- It's not recommended to use this.setState in a componentWillUpdate method.
-6- It's not recommended to use this.setState in a shouldComponentUpdate method.
-7- It's not recommended to use this.setState in a componentDidUpdate method.
-8- It's not recommended to use this.setState in a componentWillUnmount method.
-9- It's not recommended to use this.setState in a componentWillReceiveProps method.
+/* =================================this.setState=================================
+* #Rules of using this.setState:
+* 1- It's not recommended to use this.setState in a constructor.
+* 2- It's not recommended to use this.setState in a render method.
+* 3- It's not recommended to use this.setState in a componentWillMount method.
+* 4- It's not recommended to use this.setState in a componentDidMount method.
+* 5- It's not recommended to use this.setState in a componentWillUpdate method.
+* 6- It's not recommended to use this.setState in a shouldComponentUpdate method.
+* 7- It's not recommended to use this.setState in a componentDidUpdate method.
+* 8- It's not recommended to use this.setState in a componentWillUnmount method.
+* 9- It's not recommended to use this.setState in a componentWillReceiveProps method.
 -----------------------------------------------------------------------------------
 NOTE: The key difference between (this.setState) in class component and (useState) method
 in functional component is that (this.setState) will automatically merge and update the state,
