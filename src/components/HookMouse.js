@@ -21,9 +21,30 @@ function HookMouse() {
     setY(e.clientY)
   }
 
+  /*
+  *NOTE: Make sure to clean up all event listeners and cancel all subscriptions
+  *before the component is unmounted to prevent [memory leaks]. To do so, we need
+  *to return a function from the useEffect hook. This function will be called when
+  *the component is unmounted.
+  *Example:------------------------------------------------------------------------
+    useEffect(() => {
+      /your code here...
+
+      /cleanup code here...
+      return () => {
+        console.log('useEffect Cleanup')
+        window.removeEventListener('mousemove', logMousePosition)
+      }
+    }, [])
+  */
   useEffect(() => {
     console.log('useEffect called')
     window.addEventListener('mousemove', logMousePosition)
+
+    return () => {
+      console.log('usEffect Cleanup')
+      window.removeEventListener('mousemove', logMousePosition)
+    }
   }, [])
 
   return (
