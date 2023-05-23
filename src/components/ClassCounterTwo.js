@@ -1,5 +1,7 @@
 import React, { Component } from "react"
-
+/* ====================================================================
+NOTE: When new state value dep
+*/
 class ClassCounterTwo extends Component {
   constructor(props) {
     super(props)
