@@ -1,9 +1,9 @@
 import React, { useState } from "react"
-/*=================================useState=================================
-# Rules of using (useState) Hook:
-1- It should be used in the component's scope.
-2- It should be used only once.
-3- It should be used in functional component only.
+/* =================================useState=================================
+* # Rules of using (useState) Hook:
+* 1- It should be used in the component's scope.
+* 2- It should be used only once.
+* 3- It should be used in functional component only.
 ------------------------------------------------------------------------------
 NOTE: The key difference between (useState) Hook in a functional component and
 (this.setState) in class component, is that (useState) will not automatically
