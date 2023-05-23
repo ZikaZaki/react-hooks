@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 /* ====================================================================
-NOTE: When new state value dep
+NOTE: When new state value depend on the state previous value, we 
 */
 class ClassCounterTwo extends Component {
   constructor(props) {
