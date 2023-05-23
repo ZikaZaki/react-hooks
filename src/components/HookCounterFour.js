@@ -11,8 +11,8 @@ In case the (new) state value depends on the (previous) state value, you can pas
 a function to the setter function which will receive the previous state value as a
 its argument.
 ------------------------------------------------------------------------------------
-* CAREFUL!!!: When dealing with objects or arrays, always make sure to SPREAD your
-state variable and then call the setter function.
+* CAREFUL!!!: When dealing with objects or arrays, always make sure to SPREAD your 
+* state variable and then call the setter function.
 ==================================================================================*/
 
 function HookCounterFour() {
