@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 /* ====================================================================
-NOTE: When new state value depend on the state previous value, we 
+NOTE: When new state value depend on the state previous value, we pass 
+an arrow function that receives prevState as a its parameter, and then
+update the state value based on the passed prevState value.
 */
 class ClassCounterTwo extends Component {
   constructor(props) {
