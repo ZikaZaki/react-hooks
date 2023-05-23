@@ -13,10 +13,21 @@ class IntervalClassCounter extends Component {
     this.interval = setInterval(this.tick, 1000)
   }
 
+  componentWillUnmount() {
+    clearInterval(this.interval)
+  }
+
+  tick = () => {
+    this.setState({
+        count: this.state.count + 1
+    })
+  }
 
   render() {
     return (
-      <div>IntervalClassCounter</div>
+      <div>
+        <h1>{this.state.count}</h1>
+      </div>
     )
   }
 }
