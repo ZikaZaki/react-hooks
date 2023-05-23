@@ -42,7 +42,7 @@ function HookMouse() {
     window.addEventListener('mousemove', logMousePosition)
 
     return () => {
-      console.log('usEffect Cleanup')
+      console.log('usEffect Cleanup called')
       window.removeEventListener('mousemove', logMousePosition)
     }
   }, [])
