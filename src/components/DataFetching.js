@@ -8,11 +8,12 @@ function DataFetching() {
     axios.get("http://jsonplaceholder.typicode.com/posts")
       .then(res => {
         console.log(res)
+        setPosts(res.data)
       })
       .catch(err => {
         console.log(err)
       })
-  })
+  }, [])
 
   return (
     <div>
