@@ -14,7 +14,7 @@ function DataFetching() {
       .catch(err => {
         console.log(err)
       })
-  }, [])
+  }, [id])
 
   return (
     <div>
