@@ -3,6 +3,7 @@ import ClassCounter from "./components/ClassCounter";
 import ClassCounterThree from "./components/ClassCounterThree";
 import ClassCounterTwo from "./components/ClassCounterTwo";
 import ClassMouse from "./components/ClassMouse";
+import DataFetching from "./components/DataFetching";
 import HookCounter from "./components/HookCounter";
 import HookCounterFour from "./components/HookCounterFour";
 import HookCounterThree from "./components/HookCounterThree";
@@ -20,7 +21,7 @@ function App() {
       {/* <ClassCounterTwo /> */}
       {/* <ClassCounterThree /> */}
       {/* <ClassMouse /> */}
-      <IntervalClassCounter />
+      {/* <IntervalClassCounter /> */}
     {/* ======================FUNCTIONAL COMPONENTS====================== */}
       {/* <HookCounter /> */}
       {/* <HookCounterTwo /> */}
@@ -28,7 +29,8 @@ function App() {
       {/* <HookCounterFour /> */}
       {/* <HookMouse /> */}
       {/* <MouseContainer /> */}
-      <IntervalHookCounter />
+      {/* <IntervalHookCounter /> */}
+      <DataFetching />
     </div>
   );
 }
