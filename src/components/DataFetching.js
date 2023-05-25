@@ -7,6 +7,7 @@ function DataFetching() {
   const [idFromButtonClick, setIdFromButtonClick] = useState(1)
 
   const handleClick = () => {
+    console.log("handleClick")
     setIdFromButtonClick(id)
   }
 
