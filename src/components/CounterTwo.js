@@ -6,7 +6,14 @@ import React, { useReducer } from "react"
  * you can pass dispatch down instead of callbacks.
  * @see https://reactjs.org/docs/hooks-reference.html#usereducer
  * --------------------------------------------------------------------------------------
-
+ * useReducer is a hook that is used for state management in React.
+ * useReducer is related to useState, but useState is built using useReducer.
+ * useReducer(reducer, initialState) accepts two arguments, reducer and initialState.
+ * reducer is a function that accepts two arguments, state and action.
+ * initialState is the initial value of the state.
+ * useReducer returns an array with two elements, state and dispatch.
+ * state is the current state.
+ * dispatch is a function that is used to update the state.
  * 
  */
 
