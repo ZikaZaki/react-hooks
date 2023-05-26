@@ -16,6 +16,7 @@ import IntervalHookCounter from "./components/IntervalHookCounter";
 import MouseContainer from "./components/MouseContainer";
 
 export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
 
 function App() {
   return (
@@ -36,7 +37,9 @@ function App() {
       {/* <IntervalHookCounter /> */}
       {/* <DataFetching /> */}
       <UserContext.Provider value={'ZikaZaki'}>
-        <ComponentC />
+        <ChannelContext.Provider value={'Gaming'}>
+          <ComponentC />
+        </ChannelContext.Provider>
       </UserContext.Provider>
     </div>
   );
