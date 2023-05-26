@@ -36,11 +36,11 @@ function App() {
       {/* <MouseContainer /> */}
       {/* <IntervalHookCounter /> */}
       {/* <DataFetching /> */}
-      <UserContext.Provider value={'ZikaZaki'}>
+      {/* <UserContext.Provider value={'ZikaZaki'}>
         <ChannelContext.Provider value={'Gaming'}>
           <ComponentC />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
     </div>
   );
 }
