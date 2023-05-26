@@ -23,7 +23,13 @@ import React, { useReducer } from "react"
  * 5. It is easier to share state between components.
  * 6. It is easier to optimize performance.
  * --------------------------------------------------------------------------------------
-
+ * BEST PRACTICES:
+ * 1. Use the object spread operator (...) to copy state.
+ * 2. Use multiple useReducers for different types of state.
+ * 3. Use useReducer instead of useState if you have complex state logic.
+ * 4. Use useReducer instead of useState if you need to optimize performance.
+ * 5. Use useReducer instead of useState if you need to pass down the state to lower components.
+ * --------------------------------------------------------------------------------------
  * 
  */
 
