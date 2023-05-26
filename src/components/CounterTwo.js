@@ -14,6 +14,16 @@ import React, { useReducer } from "react"
  * useReducer returns an array with two elements, state and dispatch.
  * state is the current state.
  * dispatch is a function that is used to update the state.
+ * --------------------------------------------------------------------------------------
+ * BENEFITS OF USE REDUCER:
+ * 1. It is easier to test complex logic.
+ * 2. It is easier to debug.
+ * 3. It is easier to understand.
+ * 4. It is easier to refactor.
+ * 5. It is easier to share state between components.
+ * 6. It is easier to optimize performance.
+ * --------------------------------------------------------------------------------------
+
  * 
  */
 
