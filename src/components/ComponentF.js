@@ -15,7 +15,7 @@ import { UserContext, ChannelContext } from "../App"
 function ComponentF() {
   return (
     <div>
-      <UserContext.Consumer>
+      {/* <UserContext.Consumer>
         {
             user => {
               return (
@@ -34,7 +34,8 @@ function ComponentF() {
               )
             }
         }
-      </UserContext.Consumer>
+      </UserContext.Consumer> */}
+      
     </div>
   )
 }
