@@ -69,8 +69,11 @@ function App() {
       {/* <CounterThree /> */}
       <CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
         Count - {count}
+        <hr />
         <ComponentA />
+        <br />
         <ComponentB />
+        <br />
         <ComponentC />
       </CountContext.Provider>
     </div>
