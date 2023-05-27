@@ -40,7 +40,7 @@ function ComponentF() {
     //   </UserContext.Consumer>
     // </div>
     <div>
-      <h4>Component F</h4>
+      <h4>Component F - Count: {countContext.countState}</h4>
       <button onClick={() => countContext.countDispatch({type: "INCREMENT", value: 1})}>Increment</button>
       <button onClick={() => countContext.countDispatch({type: "DECREMENT", value: 1})}>Decrement</button>
       <button onClick={() => countContext.countDispatch({type: "RESET"})}>Reset</button>
