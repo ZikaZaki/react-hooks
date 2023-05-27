@@ -17,9 +17,11 @@ import MouseContainer from "./components/MouseContainer";
 import CounterOne from "./components/CounterOne";
 import CounterTwo from "./components/CounterTwo";
 import CounterThree from "./components/CounterThree";
+import ComponentA from "./components/ComponentA";
+import ComponentB from "./components/ComponentB";
 
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
+// export const UserContext = React.createContext()
+// export const ChannelContext = React.createContext()
 
 function App() {
   return (
@@ -46,7 +48,10 @@ function App() {
       </UserContext.Provider> */}
       {/* <CounterOne /> */}
       {/* <CounterTwo /> */}
-      <CounterThree />
+      {/* <CounterThree /> */}
+      <ComponentA />
+      <ComponentB />
+      <ComponentC />
     </div>
   );
 }
