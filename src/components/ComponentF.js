@@ -1,5 +1,6 @@
-import React from "react"
-import { UserContext, ChannelContext } from "../App"
+import React, { useContext } from "react"
+// import { UserContext, ChannelContext } from "../App"
+import { CountContext } from "../App"
 /*
 *NOTE:
 *  We can use the Consumer component to consume the context values.
@@ -13,29 +14,36 @@ import { UserContext, ChannelContext } from "../App"
 *  Use the static contextType property if you only need to consume a single context in a component.
 */
 function ComponentF() {
+  const countContext = useContext(CountContext)
+
   return (
+    // <div>
+    //   <UserContext.Consumer>
+    //     {
+    //         user => {
+    //           return (
+    //             <ChannelContext.Consumer>
+    //               {
+    //                 channel => {
+    //                   return (
+    //                     <div>
+    //                       <h2>User context value: {user}</h2>
+    //                       <h2>Channel context value: {channel}</h2>
+    //                     </div>
+    //                   )
+    //                 }
+    //               }
+    //             </ChannelContext.Consumer>
+    //           )
+    //         }
+    //     }
+    //   </UserContext.Consumer>
+    // </div>
     <div>
-      {/* <UserContext.Consumer>
-        {
-            user => {
-              return (
-                <ChannelContext.Consumer>
-                  {
-                    channel => {
-                      return (
-                        <div>
-                          <h2>User context value: {user}</h2>
-                          <h2>Channel context value: {channel}</h2>
-                        </div>
-                      )
-                    }
-                  }
-                </ChannelContext.Consumer>
-              )
-            }
-        }
-      </UserContext.Consumer> */}
-      
+      <h2>Component F</h2>
+      <button onClick={() => countContext.countDispatch({type: "INCREMENT", value: 1})}>Increment</button>
+      <button onClick={() => countContext.countDispatch({type: "DECREMENT", value: 1})}>Decrement</button>
+      <button onClick={() => countContext.countDispatch({type: "RESET"})}>Reset</button>
     </div>
   )
 }
