@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useReducer } from "react";
 import './App.css';
 import ClassCounter from "./components/ClassCounter";
 import ClassCounterThree from "./components/ClassCounterThree";
@@ -23,7 +23,25 @@ import ComponentB from "./components/ComponentB";
 // export const UserContext = React.createContext()
 // export const ChannelContext = React.createContext()
 
+export const CountContext = React.createContext()
+
+const initialState = 0
+const reducer = (state, action) => {
+  switch(action.type) {
+    case 'INCREMENT':
+      return state + action.value
+    case 'DECREMENT':
+      return state - action.value
+    case 'RESET':
+      return initialState
+    default:
+      return state
+  }
+}
+
 function App() {
+  const [count, dispatch] = useReducer(reducer, initialState)
+
   return (
     <div className="App">
     {/* ========================CLASS COMPONENTS======================== */}
@@ -49,9 +67,12 @@ function App() {
       {/* <CounterOne /> */}
       {/* <CounterTwo /> */}
       {/* <CounterThree /> */}
-      <ComponentA />
-      <ComponentB />
-      <ComponentC />
+      <CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
+        Count - {count}
+        <ComponentA />
+        <ComponentB />
+        <ComponentC />
+      </CountContext.Provider>
     </div>
   );
 }
