@@ -21,28 +21,29 @@ import ComponentA from "./components/ComponentA";
 import ComponentB from "./components/ComponentB";
 import DataFetchingOne from "./components/DataFetchingOne";
 import DataFetchingTwo from "./components/DataFetchingTwo";
+import ParentComponent from "./components/Employee/ParentComponent";
 
 // export const UserContext = React.createContext()
 // export const ChannelContext = React.createContext()
 
-export const CountContext = React.createContext()
+// export const CountContext = React.createContext()
 
-const initialState = 0
-const reducer = (state, action) => {
-  switch(action.type) {
-    case 'INCREMENT':
-      return state + action.value
-    case 'DECREMENT':
-      return state - action.value
-    case 'RESET':
-      return initialState
-    default:
-      return state
-  }
-}
+// const initialState = 0
+// const reducer = (state, action) => {
+//   switch(action.type) {
+//     case 'INCREMENT':
+//       return state + action.value
+//     case 'DECREMENT':
+//       return state - action.value
+//     case 'RESET':
+//       return initialState
+//     default:
+//       return state
+//   }
+// }
 
 function App() {
-  const [count, dispatch] = useReducer(reducer, initialState)
+  // const [count, dispatch] = useReducer(reducer, initialState)
 
   return (
     <div className="App">
@@ -79,7 +80,8 @@ function App() {
         <ComponentC />
       </CountContext.Provider> */}
       {/* <DataFetchingOne /> */}
-      <DataFetchingTwo />
+      {/* <DataFetchingTwo /> */}
+      <ParentComponent />
     </div>
   );
 }
