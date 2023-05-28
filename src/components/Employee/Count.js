@@ -1,8 +1,10 @@
 import React from "react"
 
-function Count() {
+function Count({ text, count }) {
+  console.log(`Rendering ${text}: ${count}`)
+
   return (
-    <div>Count</div>
+    <div>{text}: {count}</div>
   )
 }
 
