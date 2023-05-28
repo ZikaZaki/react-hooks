@@ -21,7 +21,7 @@ function ParentComponent() {
       <Count text="Age" count={age} />
       <Button handleClick={incrementAge}>Increment Age</Button>
       <Count text="Salary" count={salary} />
-      <Button handleClick={incrementSalary}> Increment Salary</Button>
+      <Button handleClick={incrementSalary}>Increment Salary</Button>
     </div>
   )
 }
