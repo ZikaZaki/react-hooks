@@ -1,8 +1,12 @@
 import React from "react"
 
-function Button() {
+function Button({ handleClick, children }) {
+  console.log('Rendering button - ', children)
+
   return (
-    <div>Button</div>
+    <button onClick={handleClick}>
+      {children}
+    </button>
   )
 }
 
