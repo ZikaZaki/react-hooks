@@ -16,7 +16,7 @@ function DataFetchingOne() {
       .catch(error => {
         setLoading(false)
         setPost({})
-        setError("Something went wrong!")
+        setError(`Something went wrong! Error-Message: ${error.message}`)
       })
   }, [])
 

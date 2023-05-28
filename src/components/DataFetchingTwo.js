@@ -28,6 +28,7 @@ const reducer = (state, action) => {
 
 function DataFetchingTwo() {
   const [postState, dispatch] = useReducer(reducer, initialState)
+
   useEffect(() => {
     axios.get("https://jsonplaceholder.typicode.com/posts/1")
       .then(response => {
