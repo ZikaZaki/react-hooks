@@ -58,9 +58,6 @@ function ParentComponent() {
     <div>
       <Title />
       <Count text="Age" count={age} />
-      {/* We dealing with functions like "handleClick", we always have to consider
-        * reference equality, in order to prevent rendering the component again and again
-        * we have to use "useCallback" hook */}
       <Button handleClick={incrementAge}>Increment Age</Button>
       <Count text="Salary" count={salary} />
       <Button handleClick={incrementSalary}>Increment Salary</Button>
