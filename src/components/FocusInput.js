@@ -5,10 +5,12 @@ function FocusInput() {
 
   useEffect(() => {
     // focus the input element
+    inputRef.current.focus()
   }, [])
+
   return (
     <div>
-      <input type="text" />
+      <input ref={inputRef} type="text" />
     </div>
   )
 }
