@@ -23,6 +23,23 @@ import Title from "./Title"
  * 4- Wrap the child component in React.memo() HOC.
  * 5- Check the console to see the difference.
  * ---------------------------------------------------------------------------------------------------
+ ** CAUTION...!!!
+ ** Using useCallback & useMemo hooks excessively can cause performance issues. So, use them
+ ** carefully and wisely. The reason why, is that useCallback & useMemo hooks are used to optimize
+ ** the rendering of components. But, in the case of useCallback & useMemo hooks, the optimization
+ ** is not a semantic guarantee and only will consume more memory and CPU cycles.
+ * ----------------------------------------------------------------------------------------------------
+ *  To learn more about useCallback hook, visit:
+ *  Articles:-------------------------------------------------------
+ *   - @see https://reactjs.org/docs/hooks-reference.html#usecallback
+ *   - @see https://kentcdodds.com/blog/usememo-and-usecallback
+ *   - @see https://dmitripavlutin.com/dont-overuse-react-usecallback/
+ *   - @see https://dmitripavlutin.com/react-usecallback-hook/
+ *  Videos:----------------------------------------------------------
+ *   - @see https://www.youtube.com/watch?v=THL1OPn72vo
+ *   - @see https://www.youtube.com/watch?v=dpw9EHDh2bM
+ *   - @see https://www.youtube.com/watch?v=6Xwo5mVxDqI
+ * ----------------------------------------------------------------------------------------------------
  */
 
 function ParentComponent() {
