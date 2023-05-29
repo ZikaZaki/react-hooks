@@ -1,8 +1,10 @@
-import React from 'react'
+import React from "react"
 
 function FocusInput() {
   return (
-    <div>FocusInput</div>
+    <div>
+      <input type="text" />
+    </div>
   )
 }
 
