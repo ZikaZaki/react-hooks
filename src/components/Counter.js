@@ -16,6 +16,17 @@ import React, { useState, useMemo } from "react"
  * - If there is an empty dependency array, then it will only compute the memoized value once.
  * - If there is no dependency array, then it will recompute the memoized value on every render.
  * ---------------------------------------------------------------------------------------------
+ ** -------------useMemo() vs useCallback()-------------
+ * - useCallback() is used to memoize a function.
+ * - useCallback() caches the function instance itself.
+ * - useMemo() is used to memoize a value.
+ * - useMemo() invokes the provided function and caches its result "value".
+ * - useCallback() returns its function uncalled so you can call it later, while useMemo()
+ *   calls its function and returns the result.
+ * - useCallback() is useful when passing callbacks to optimized child components that rely on
+ *   reference equality to prevent unnecessary renders (e.g. shouldComponentUpdate).
+ * - useMemo() is useful for avoiding expensive calculations on every render.
+ * ---------------------------------------------------------------------------------------------
  * To learn more about useMemo() hook, visit:
  * Articles:
  * -@see https://www.robinwieruch.de/react-usememo-hook
