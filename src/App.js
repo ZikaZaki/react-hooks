@@ -83,7 +83,7 @@ function App() {
       {/* <DataFetchingOne /> */}
       {/* <DataFetchingTwo /> */}
       {/* <ParentComponent /> */}
-      <Counter />
+      {/* <Counter /> */}
     </div>
   );
 }
