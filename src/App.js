@@ -1,9 +1,9 @@
 import React, { useReducer } from "react";
 import './App.css';
-import ClassCounter from "./components/ClassCounter";
-import ClassCounterThree from "./components/ClassCounterThree";
-import ClassCounterTwo from "./components/ClassCounterTwo";
-import ClassMouse from "./components/ClassMouse";
+// import ClassCounter from "./components/ClassCounter";
+// import ClassCounterThree from "./components/ClassCounterThree";
+// import ClassCounterTwo from "./components/ClassCounterTwo";
+// import ClassMouse from "./components/ClassMouse";
 // import ComponentC from "./components/ComponentC";
 import DataFetching from "./components/DataFetching";
 import HookCounter from "./components/HookCounter";
