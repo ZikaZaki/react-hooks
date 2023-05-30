@@ -24,6 +24,7 @@ class ClassTimer extends Component {
     return (
       <div>
         ClassTimer: {this.state.timer}
+        <br />
         <button onClick={() => clearInterval(this.interval)}>Clear Timer</button>
       </div>
     )
