@@ -16,6 +16,8 @@ function HookTimer() {
   return (
     <div>
       Hook Timer: {timer}
+      <br />
+      <button onClick={() => clearInterval(timer)}>Clear Hook Timer</button>
     </div>
   )
 }
