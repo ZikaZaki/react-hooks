@@ -22,7 +22,7 @@ class ClassTimer extends Component {
 
   render() {
     return (
-      <div>ClassTimer</div>
+      <div>ClassTimer: {this.state.timer}</div>
     )
   }
 }
