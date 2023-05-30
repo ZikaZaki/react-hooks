@@ -22,7 +22,10 @@ class ClassTimer extends Component {
 
   render() {
     return (
-      <div>ClassTimer: {this.state.timer}</div>
+      <div>
+        ClassTimer: {this.state.timer}
+        <button onClick={() => clearInterval(this.interval)}>Clear Timer</button>
+      </div>
     )
   }
 }
