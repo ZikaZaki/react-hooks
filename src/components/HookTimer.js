@@ -14,7 +14,9 @@ function HookTimer() {
   }, [])
 
   return (
-    <div>HookTimer</div>
+    <div>
+      Hook Timer: {timer}
+    </div>
   )
 }
 
