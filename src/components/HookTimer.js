@@ -11,7 +11,7 @@ function HookTimer() {
     return () => {
       clearInterval(interval)
     };
-  })
+  }, [])
 
   return (
     <div>HookTimer</div>
