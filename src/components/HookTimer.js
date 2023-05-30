@@ -7,6 +7,10 @@ function HookTimer() {
     const interval = setInterval(() => {
       setTimer(prevTimer => prevTimer + 1)
     }, 1000)
+    // to clear values on unmount, useEffect returns a function
+    return () => {
+      clearInterval(interval)
+    };
   })
 
   return (
